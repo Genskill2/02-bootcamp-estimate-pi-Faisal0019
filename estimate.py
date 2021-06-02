@@ -5,7 +5,7 @@ import random
 def monte_carlo(total):
     inside = 0
     for i in range(0, total):
-        if math.sqrt(random.random()*2 + random.random()*2) < 1.0:
+        if math.sqrt(random.random()**2 + random.random()**2) < 1.0:
             inside += 1 
     return (float(inside) / total) * 4
 
