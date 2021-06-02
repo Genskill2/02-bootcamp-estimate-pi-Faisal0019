@@ -13,7 +13,7 @@ def wallis(n):
     pi = 1.0
     for i in range(n):
         pi = pi * (2.0 * i)/(2 * i - 1) * (2.0 * i)/(2 * i + 1)
-    return pi
+    return 2*pi
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
@@ -37,7 +37,7 @@ class TestMC(unittest.TestCase):
     def test_accuracy(self):
         for i in range(500, 600):
             pi = monte_carlo(i)
-            self.assertFalse(abs(pi - math.pi) < 0.4, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
+            self.assertTrue(abs(pi - math.pi) < 0.4, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
         
     
 if __name__ == "_main_":
