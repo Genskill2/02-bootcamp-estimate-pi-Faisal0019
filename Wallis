@@ -2,18 +2,18 @@ def wallis():
 
     print("Wallis\n===========")
 
-    iterations = 1000000
-    numerator = 2.0
-    denominator = 1.0
-    pi = 1.0
+    i = 1000000
+    numerator = 2
+    denominator = 1
+    pi = 1
 
-    for iterations in range(1, iterations + 1):
+    for i in range(1, i + 1):
         pi*= (numerator / denominator)
-        if (iterations%2) == 1:
-            denominator+= 2.0
+        if (i%2) == 1:
+            denominator+= 2
         else:
-            numerator+= 2.0
+            numerator+= 2
 
-    pi*= 2.0
+    pi*= 2
 
     print_as_text(pi) 
