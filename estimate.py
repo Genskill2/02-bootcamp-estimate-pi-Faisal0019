@@ -2,19 +2,13 @@ import unittest
 import math
 import random
 
-def wallis(iterations)
-numerator= 2.0
-denominator= 1.0
+def wallis(n)
 pi=1.0
-for i in range(1,iterations)
-pi*=(numerator/denominator)
-if(i%2==1)
-denominator+= 2.0
-else:
-	numerator+=2.0
-	pi*=2.0
-	return pi
-	
+for i in range(n)
+pi*= (2.0*i)/(2*i-1)*(2.0*i)(2*i+1)
+return pi
+
+
 def monte_carlo(overall)
 inside = 0
 for i in range (0,overall)
