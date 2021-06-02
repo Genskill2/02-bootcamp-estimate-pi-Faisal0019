@@ -1,8 +1,5 @@
 def wallis():
 
-    
-    print("Wallis\n======")
-
     iterations = 1000000
     numerator = 2.0
     denominator = 1.0
