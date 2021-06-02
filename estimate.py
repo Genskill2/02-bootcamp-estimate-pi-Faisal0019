@@ -1,8 +1,8 @@
-import math
 from random import random
 radius = 2
 
-def monte_carlo(num_random_tests):
+
+def estimate_pi(num_random_tests):
     pi_counter = 0
     rsquared = radius ** 2
     for _ in range(num_random_tests):
@@ -14,4 +14,4 @@ def monte_carlo(num_random_tests):
     return 4 * pi_counter / num_random_tests
 
 
-assert round(monte_carlo(100000000), 3) == 3.141
+assert round(estimate_pi(100000000), 10)
