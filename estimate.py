@@ -1,4 +1,6 @@
 import math
+from random import random
+radius = 2
 
 def monte_carlo(num_random_tests):
     pi_counter = 0
