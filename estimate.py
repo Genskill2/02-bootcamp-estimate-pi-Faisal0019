@@ -10,7 +10,7 @@ def monte_carlo(total):
     return (float(inside) / total) * 4
 
 def wallis(n):
-    pi = 1.0.
+    pi = 1.0
     for i in range(n):
         pi = pi * (2.0 * i)/(2 * i - 1) * (2.0 * i)/(2 * i + 1)
     return pi
