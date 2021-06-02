@@ -11,7 +11,7 @@ def monte_carlo(total):
 
 def wallis(n):
     pi = 1.0
-    for i in range(n):
+    for i in range(1,n):
         pi = pi * (2.0 * i)/(2 * i - 1) * (2.0 * i)/(2 * i + 1)
     return 2*pi
 
