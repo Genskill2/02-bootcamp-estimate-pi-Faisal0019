@@ -1,17 +1,11 @@
-from random import random
-radius = 2
-
-
-def estimate_pi(num_random_tests):
-    pi_counter = 0
-    rsquared = radius ** 2
-    for _ in range(num_random_tests):
-        x_rand = random() * radius
-        y_rand = random() * radius
-        if (x_rand ** 2) + (y_rand ** 2) < rsquared:
-            pi_counter += 1
-
-    return 4 * pi_counter / num_random_tests
-
-
-assert round(estimate_pi(100000000), 10)
+def wallis(dublets):
+    products = 1
+    multiplier - 2
+    for dublet in range(dublet):
+        pterm = (multiplier)/(multiplier-1)
+        nterm = (multiplier)/(multiplier+1)
+        products *= pterm*nterm
+        multiplier +=2
+    return products*2
+    print(wallis(100000))
+    print('Estimate of PI: ')
