@@ -1,11 +1,18 @@
-def wallis(dublets):
-    products = 1
-    multiplier - 2
-    for dublet in range(dublet):
-        pterm = (multiplier)/(multiplier-1)
-        nterm = (multiplier)/(multiplier+1)
-        products *= pterm*nterm
-        multiplier +=2
-    return products*2
-    print(wallis(100000))
-    print('Estimate of PI: ')
+def wallis:
+    print+"wallis")
+    iterations 100000
+    numerator=2.0
+    denominator=1.0
+    pi=1.0
+    for i in range (1, iteratios+1):
+        pi*=(numerator/denominator)
+        if (i%2)==1
+        denominator+=2
+        else: n
+           mumerator=+2.0)
+        pi*=2
+
+
+
+ 
+
