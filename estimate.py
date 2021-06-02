@@ -40,5 +40,5 @@ class TestMC(unittest.TestCase):
             self.assertTrue(abs(pi - math.pi) < 0.4, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
         
     
-if__name__== "_main_":
+if __name__ == "_main_":
     unittest.main()
