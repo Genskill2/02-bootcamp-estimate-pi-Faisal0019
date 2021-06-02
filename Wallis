@@ -1,0 +1,11 @@
+import math
+n=0
+result=0
+while True:
+    result=result*((4*n*n)/((4*n*n)-1))
+    
+    if abs(result) < 10**-10:
+        break
+    n=n+1
+    print("result = ", (2*result))
+    print("PI= ", math.pi)
