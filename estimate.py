@@ -1,23 +1,20 @@
-import unittest
 import math
+import unittest
 import random
 
 def wallis(n)
-pi=1.0
+pi=1.0.
 for i in range(n)
 pi*= (2.0*i)/(2*i-1)*(2.0*i)(2*i+1)
 return pi
 
 
-def monte_carlo(overall)
+def monte_carlo(total)
 inside = 0
-for i in range (0,overall)
-x=random.random()**2
-y=random.random()**2
-if math.sqrt(x**2 + y**2) < 1.0:
+for i in range (0,total)
+if math.sqrt(random.random**2 + random.random**2) < 1.0:
 	inside +=1
-	pi= (float(inside)/overall)*4
-return pi
+	 return(float(inside)/total)*4
 
 
 class TestWallis(unittest.TestCase):
@@ -59,9 +56,3 @@ pi = monte_carlo(i)
 self.assertTrue(abs(pi - math.pi) < 0.4, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
 
 if __name__ == "__main__":
-
-unittest.main()
-
-from random import random
-
-radius = 2
