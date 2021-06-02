@@ -1,9 +1,8 @@
 import unittest
-import math as m
-import random as r
+import math
+import random
 
 def wallis(iterations)
-iterations= 100000
 numerator= 2.0
 denominator= 1.0
 pi=1.0
@@ -13,17 +12,18 @@ if(i%2==1)
 denominator+= 2.0
 else:
 	numerator+=2.0
+	pi*=2.0
+	return pi
 	
 def monte_carlo(overall)
 inside = 0
-overall = 100000
 for i in range (0,overall)
-x=r.random()**2
-y=r.random()**2
-if m.sqrt(x**2 + y**2) < 1.0:
+x=random.random()**2
+y=random.random()**2
+if math.sqrt(x**2 + y**2) < 1.0:
 	inside +=1
 	pi= (float(inside)/overall)*4
-
+return pi
 
 
 class TestWallis(unittest.TestCase):
